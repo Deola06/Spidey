@@ -1,0 +1,152 @@
+@font-face {
+    font-family:"spidey" ;
+    src: url("the_amazing_spider_man/The Amazing Spider-Man.ttf");
+}
+
+*{
+    font-family: "spidey";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+Body {
+    Color: #d8d8d8;
+    Font-family: ‘Arial’, sans-serif;
+    Overflow: hidden;
+    Margin: 0;
+    Height: 100vh;
+    Display: flex;
+    Justify-content: center;
+    Align-items: center;
+    Position: relative;
+}
+
+.wallpaper{
+    height: 100%;
+    width: 100%;
+    Display: flex;
+    Align-items: center;
+    Position: relative;
+}
+
+#one{
+    background-image:url('img/1719689581613.jpg');
+    background-size:cover ;
+    Justify-content: left;
+}
+
+#two{
+    background-image:url('img/1719691033523.webp');
+    background-size:cover ;
+    Justify-content: center;
+}
+
+.spiderman-swinging {
+    Position: absolute;
+    Bottom: 0%;
+    Left: 0%;
+    Width: 100vw;
+    Height: 100vh;
+    Animation: swing 5s linear infinite;
+}
+
+.spiderman-swinging img{
+    width: 25%;
+    height: auto;
+}
+
+@keyframes swing {
+    0% {
+        Transform: translateY(-50px);
+    }
+    50% {
+        Transform: translateY(-25px);
+    }
+    100% {
+        Transform: translateY(-50px);
+    }
+}
+
+.content {
+    width: 40%;
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    align-items: Left;
+    z-index: 10;
+}
+
+.content h1{
+    font-size: 5.5rem;
+}
+
+.content #good{
+    font-size: 4rem;
+}
+
+.content #love{
+    font-size: 1rem;
+    width: 100%;
+    font-family: serif;
+    text-align: right;
+}
+
+.logo {
+    Border: none;
+    width: 100px;
+    Cursor: pointer;
+    Transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+
+#message {
+    Margin-top: 20px;
+}
+
+.cat img{
+    Position: absolute;
+    right: -5%;
+    Width: auto;
+    Height: 70%;
+    bottom: 0;
+}
+
+@media screen and (max-width: 720px){
+    #one{
+        justify-content:center;
+        background-image: url(img/rtyuil;o.jpg) ;
+        filter: brightness(0.8);
+    }
+    .content{
+        width: 100%;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .content h1{
+        font-size: 3.5rem;
+    }
+    
+    .spiderman-swinging img{
+        width: 50%;
+    }
+    
+    .cat img{
+        right: -7%;
+        Height: 40%;
+    }
+
+    .content #good{
+        font-size: 2rem;
+        width: 100%;
+    }
+    
+    .content #love{
+        font-size: 0.7rem;
+    }
+}
