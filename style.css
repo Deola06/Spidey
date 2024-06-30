@@ -11,7 +11,7 @@
 }
 
 Body {
-    Color: #d8d8d8;
+    Color: #f0f0f0;
     Font-family: ‘Arial’, sans-serif;
     Overflow: hidden;
     Margin: 0;
@@ -75,6 +75,7 @@ Body {
     text-align: center;
     align-items: Left;
     z-index: 10;
+    flex-direction: column;
 }
 
 .content h1{
