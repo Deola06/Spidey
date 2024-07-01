@@ -8,10 +8,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 Body {
-    Color: #f0f0f0;
+    Color: #ffffff;
     Font-family: ‘Arial’, sans-serif;
     Overflow: hidden;
     Margin: 0;
