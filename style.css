@@ -8,13 +8,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    Overflow: hidden;
 }
 
 Body {
-    Color: #ffffff;
+    Color: #f0f0f0;
     Font-family: ‘Arial’, sans-serif;
-    Overflow: hidden;
     Margin: 0;
     Height: 100vh;
     Display: flex;
@@ -112,9 +111,10 @@ Body {
 
 .cat img{
     Position: absolute;
-    right: -5%;
+    right: -60px;
     Width: auto;
     Height: 70%;
+    overflow: hidden;
     bottom: 0;
 }
 
@@ -135,11 +135,11 @@ Body {
     }
     
     .spiderman-swinging img{
-        width: 50%;
+        width: 45%;
     }
     
     .cat img{
-        right: -7%;
+        right: -35px;
         Height: 40%;
     }
 
